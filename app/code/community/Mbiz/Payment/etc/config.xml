@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+/**
+ * This file is part of Mbiz_Payment for Magento.
+ *
+ * @license MIT
+ * @author Maxime Huran <m.huran@monsieurbiz.com> <@MaximeHuran>
+ * @category Mbiz
+ * @package Mbiz_Payment
+ * @copyright Copyright (c) 2017 Monsieur Biz (https://monsieurbiz.com/)
+ */
+-->
+<config>
+    <modules>
+        <Mbiz_Payment>
+            <version>0.1.0</version>
+        </Mbiz_Payment>
+    </modules>
+
+    <global>
+        <models>
+            <mbiz_payment>
+                <class>Mbiz_Payment_Model</class>
+            </mbiz_payment>
+        </models>
+        <helpers>
+            <mbiz_payment>
+                <class>Mbiz_Payment_Helper</class>
+            </mbiz_payment>
+            <payment>
+                <rewrite>
+                    <data>Mbiz_Payment_Helper_Data</data>
+                </rewrite>
+            </payment>
+        </helpers>
+        <blocks>
+            <mbiz_payment>
+                <class>Mbiz_Payment_Block</class>
+            </mbiz_payment>
+        </blocks>
+    </global>
+
+    <default>
+        <payment>
+            <mbiz_payment>
+                <active>0</active>
+                <title>Custom Payment</title>
+                <order_status>pending</order_status>
+                <allowspecific>0</allowspecific>
+                <sort_order>100</sort_order>
+                <model>mbiz_payment/standard</model>
+            </mbiz_payment>
+        </payment>
+    </default>
+
+    <!-- Add files to don't break Mage_Payment_Helper translations -->
+    <adminhtml>
+        <translate>
+            <modules>
+                <Mbiz_Payment>
+                    <files>
+                        <default>Mbiz_Payment.csv</default>
+                        <parent>Mage_Payment.csv</parent>
+                    </files>
+                </Mbiz_Payment>
+            </modules>
+        </translate>
+    </adminhtml>
+
+    <!-- Add files to don't break Mage_Payment_Helper translations -->
+    <frontend>
+        <translate>
+            <modules>
+                <Mbiz_Payment>
+                    <files>
+                        <default>Mbiz_Payment.csv</default>
+                        <parent>Mage_Payment.csv</parent>
+                    </files>
+                </Mbiz_Payment>
+            </modules>
+        </translate>
+    </frontend>
+</config>

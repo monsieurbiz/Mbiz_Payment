@@ -1,0 +1,26 @@
+<?php
+/**
+ * This file is part of Mbiz_Payment for Magento.
+ *
+ * @license MIT
+ * @author Maxime Huran <m.huran@monsieurbiz.com> <@MaximeHuran>
+ * @category Mbiz
+ * @package Mbiz_Payment
+ * @copyright Copyright (c) 2017 Monsieur Biz (https://monsieurbiz.com/)
+ */
+?>
+<?php
+/**
+ * @see Mbiz_Payment_Model_Standard
+ */
+?>
+    <p><?php echo $this->__($this->escapeHtml($this->getMethod()->getTitle())); ?></p>
+<?php if ($this->getInfo()->getCcType()) : ?>
+    <p><?php echo $this->__('Initial payment method : %s', $this->getInfo()->getMethod()); ?></p>
+<?php endif; ?>
+<?php if ($this->getInfo()->getCcType()) : ?>
+    <p><?php echo $this->__('Credit card type : %s', $this->getInfo()->getCcType()); ?></p>
+<?php endif; ?>
+<?php if ($this->getInfo()->getLastTransId()) : ?>
+    <p><?php echo $this->__('Last transaction ID : %s', $this->getInfo()->getLastTransId()); ?></p>
+<?php endif; ?>

@@ -1,0 +1,15 @@
+{
+  "name": "monsieurbiz/mbiz_payment",
+  "description": "Magento module which replace old payment methods by a custom to avoid exceptions",
+  "type": "magento-module",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Maxime Huran",
+      "email": "m.huran@monsieurbiz.com"
+    }
+  ],
+  "suggest": {
+    "magento-hackathon/magento-composer-installer": "Allows to manage this package as a dependency."
+  }
+}

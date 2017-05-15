@@ -1,0 +1,6 @@
+app/code/community/Mbiz/Payment app/code/community/Mbiz/Payment
+app/etc/modules/Mbiz_Payment.xml app/etc/modules/Mbiz_Payment.xml
+app/locale/fr_FR/Mbiz_Payment.csv app/locale/fr_FR/Mbiz_Payment.csv
+app/design/adminhtml/default/default/template/payment/info/pdf/mbiz_standard.phtml app/design/adminhtml/default/default/template/payment/info/pdf/mbiz_standard.phtml
+app/design/adminhtml/default/default/template/payment/info/mbiz_standard.phtml app/design/adminhtml/default/default/template/payment/info/mbiz_standard.phtml
+app/design/frontend/base/default/template/payment/info/mbiz_standard.phtml app/design/frontend/base/default/template/payment/info/mbiz_standard.phtml
