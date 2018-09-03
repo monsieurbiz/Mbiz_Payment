@@ -15,7 +15,7 @@
  */
 ?>
     <p><?php echo $this->__($this->escapeHtml($this->getMethod()->getTitle())); ?></p>
-<?php if ($this->getInfo()->getCcType()) : ?>
+<?php if ($this->getInfo()->getMethod()) : ?>
     <p><?php echo $this->__('Initial payment method : %s', $this->getInfo()->getMethod()); ?></p>
 <?php endif; ?>
 <?php if ($this->getInfo()->getCcType()) : ?>
